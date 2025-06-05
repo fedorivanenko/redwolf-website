@@ -5,7 +5,11 @@
     "scripts": {
       "dev": "pnpm --recursive dev",
       "dev:web": "pnpm --filter redwolf-website-frontend dev",
-      "dev:studio": "pnpm --filter redwolf-website-studio dev"
+      "dev:studio": "pnpm --filter redwolf-website-studio dev",
+
+      "build": "pnpm --recursive build",
+      "build:web": "pnpm --filter redwolf-website-frontend build",
+      "build:studio": "pnpm --filter redwolf-website-studio build"
     }
   }
   
