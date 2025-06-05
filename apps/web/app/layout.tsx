@@ -1,40 +1,7 @@
 import type { Metadata } from "next";
 
 import { ThemeProvider } from "@/components/theme-provider";
-
-import localFont from 'next/font/local'
- 
-export const NeueHaas = localFont({
-  src: [
-    {
-      path: './fonts/NeueHaasDisplayThin.ttf',
-      weight: '100',
-      style: 'normal',
-    },
-    {
-      path: './fonts/NeueHaasDisplayLight.ttf',
-      weight: '300',
-      style: 'normal',
-    },
-    {
-      path: './fonts/NeueHaasDisplayRoman.ttf',
-      weight: '400',
-      style: 'normal',
-    },
-    {
-      path: './fonts/NeueHaasDisplayMedium.ttf',
-      weight: '500',
-      style: 'normal',
-    },
-    {
-      path: './fonts/NeueHaasDisplayBold.ttf',
-      weight: '700',
-      style: 'normal',
-    },
-  ],
-  variable: '--font-neue-haas',
-  display: 'swap',
-})
+import { NeueHaas } from "@/lib/fonts";
 
 import "./globals.css";
 import { GsapAnimator } from "@/components/motion/gsap-animator";
