@@ -1,11 +1,11 @@
 import * as React from "react";
 import { cn } from "@/lib/utils";
 
-export const Container: React.FC<React.HTMLAttributes<HTMLDivElement>> = ({
-  className,
-  children,
-  ...props
-}) => {
+type ContainerProps = {
+  children: React.ReactNode;
+} & React.HTMLAttributes<HTMLDivElement>;
+
+export function Container({ className, children, ...props }: ContainerProps) {
   return (
     <div
       className={cn(
@@ -17,4 +17,4 @@ export const Container: React.FC<React.HTMLAttributes<HTMLDivElement>> = ({
       {children}
     </div>
   );
-};
+}
